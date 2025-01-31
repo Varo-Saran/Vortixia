@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortixia - Digital Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="light-theme">
+    <header class="glassy-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VORTIXIA</a>
+    
+            <!-- Hamburger menu for mobile -->
+            <button type="button" class="hamburger" aria-label="Menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+              
+            
+            <!-- Navigation links -->
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-trigger">Team <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="open-positions.html">Open Positions</a></li>
+                            <li><a href="submit-resume.html">Submit Resume</a></li>
+                            <li class="nested-dropdown">
+                                <a href="#" class="nested-dropdown-trigger">Applications <i class="fas fa-chevron-right"></i></a>
+                                <ul class="nested-dropdown-menu">
+                                    <li><a href="software-developer-application.html">Software Developer</a></li>
+                                    <li><a href="graphic-designer-application.html">Graphic Designer</a></li>
+                                    <li><a href="data-analyst-application.html">Data Analyst</a></li>
+                                    <li><a href="cybersecurity-specialist-application.html">Cybersecurity Specialist</a></li>
+                                    <li><a href="project-manager-application.html">Project Manager</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+    
+                <!-- Theme toggle switch -->
+                <div class="theme-toggle">
+                    <div class="icon sun"><i class="fas fa-sun"></i></div>
+                    <div class="icon moon"><i class="fas fa-moon"></i></div>
+                    <div class="toggle-switch"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <div class="mobile-nav-container">
+            <nav class="mobile-primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li>
+                        <button class="mobile-submenu-trigger" data-submenu="team">
+                            Team
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Team Submenu -->
+            <div class="mobile-submenu" data-submenu="team">
+                <button class="mobile-back-button">
+                    <i class="fas fa-chevron-left"></i> Back
+                </button>
+                <h3>Team</h3>
+                <ul>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="open-positions.html">Open Positions</a></li>
+                    <li><a href="submit-resume.html">Submit Resume</a></li>
+                    <li>
+                        <button class="mobile-submenu-trigger" data-submenu="applications">
+                            Applications
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Applications Nested Submenu -->
+            <div class="mobile-submenu" data-submenu="applications">
+                <button class="mobile-back-button">
+                    <i class="fas fa-chevron-left"></i> Back
+                </button>
+                <h3>Applications</h3>
+                <ul>
+                    <li><a href="software-developer-application.html">Software Developer</a></li>
+                    <li><a href="graphic-designer-application.html">Graphic Designer</a></li>
+                    <li><a href="data-analyst-application.html">Data Analyst</a></li>
+                    <li><a href="cybersecurity-specialist-application.html">Cybersecurity Specialist</a></li>
+                    <li><a href="project-manager-application.html">Project Manager</a></li>
+                </ul>
+            </div>
+            
+            <!-- Theme Toggle (Mobile) -->
+            <div class="mobile-theme-toggle">               
+                <div class="icon sun"><i class="fas fa-sun"></i></div>
+                <div class="icon moon"><i class="fas fa-moon"></i></div>
+                <div class="toggle-switch"></div>
+            </div>
+
+            <div class="mobile-social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <main id="index-main">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1 class="glassy-text">Welcome to Vortixia</h1>
+                <p class="glassy-text">Transforming ideas into powerful digital experiences</p>
+                <a href="#services" class="cta-button">Explore Our Services</a>
+            </div>
+            <div class="hero-background">
+                <div class="circles"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section glassy-section">
+            <div class="container">
+                <h2>About Vortixia</h2>
+                <p>At Vortixia, we combine expertise in software development, data analysis, and graphic design to deliver comprehensive digital solutions. Our unique approach integrates cutting-edge technology with data-driven insights and stunning visuals, empowering businesses to thrive in the digital landscape.</p>
+                <a href="about.html" class="learn-more">Learn More About Us</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section glassy-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p class="section-description">We offer a wide range of digital solutions to help your business grow and succeed in the modern world.</p>
+                <div class="services-grid">
+                    <!-- Service Card 1: Software & Web Development -->
+                    <div class="service-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Software & Web Development</h3>
+                        <p>We create cutting-edge software and web solutions tailored to your specific business requirements.</p>
+                        <a href="services.html" class="learn-more">Learn More</a>
+                    </div>
+
+                    <!-- Service Card 2: Data Analysis -->
+                    <div class="service-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Data Analysis</h3>
+                        <p>Transform your raw data into actionable insights that drive informed decision-making.</p>
+                        <a href="services.html" class="learn-more">Learn More</a>
+                    </div>
+
+                    <!-- Service Card 3: Graphic Design -->
+                    <div class="service-card">
+                        <i class="fas fa-palette"></i>
+                        <h3>Graphic Design</h3>
+                        <p>Elevate your brand with visually stunning designs that captivate your audience.</p>
+                        <a href="services.html" class="learn-more">Learn More</a>
+                    </div>
+
+                    <!-- Service Card 4: Cybersecurity -->
+                    <div class="service-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cybersecurity</h3>
+                        <p>Protect your digital assets and ensure the integrity of your business operations.</p>
+                        <a href="services.html" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section glassy-section">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <p class="section-description">Explore some of our recent work and see how we’ve helped businesses achieve their goals through innovative digital solutions.</p>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="Project 1">
+                        </div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>We developed a fully customized e-commerce platform for a retail client, featuring seamless payment integration and a user-friendly interface.</p>
+                        <a href="projects.html" class="learn-more">Learn More</a>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Project 2">
+                        </div>
+                        <h3>Data Analytics Dashboard</h3>
+                        <p>Created a data analytics dashboard for a financial services company, enabling real-time insights and decision-making.</p>
+                        <a href="projects.html" class="learn-more">Learn More</a>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Project 3">
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Designed and developed a mobile app for a fitness startup, offering workout tracking and personalized recommendations.</p>
+                        <a href="projects.html" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section glassy-section">
+            <div class="container">
+                <h2>Our Team</h2>
+                <p class="section-description">Meet the passionate professionals behind Vortixia. Our team is dedicated to delivering innovative digital solutions that drive success for our clients.</p>
+                <div class="team-grid">
+                    <!-- Team Member 1 -->
+                    <div class="team-member">
+                        <img src="images/team-member1.jpg" alt="John Doe - CEO & Founder">
+                        <h3>John Doe</h3>
+                        <p class="role">CEO & Founder</p>
+                        <p class="description">John is the visionary behind Vortixia, with over 15 years of experience in software development and digital strategy.</p>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-member">
+                        <img src="images/team-member2.jpg" alt="Jane Smith - Lead Developer">
+                        <h3>Jane Smith</h3>
+                        <p class="role">Lead Developer</p>
+                        <p class="description">Jane is a coding wizard, specializing in full-stack development and creating scalable, high-performance applications.</p>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-member">
+                        <img src="images/team-member3.jpg" alt="Emily Johnson - Graphic Designer">
+                        <h3>Emily Johnson</h3>
+                        <p class="role">Graphic Designer</p>
+                        <p class="description">Emily is a creative powerhouse, crafting visually stunning designs that captivate audiences and elevate brands.</p>
+                    </div>
+                </div>
+                <a href="team.html" class="cta-button">Meet the Full Team</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section glassy-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Ready to transform your ideas into reality? Contact us today!</p>
+                <a href="contact.html" class="cta-button">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glassy-footer">
+        <div class="footer-content">
+            <!-- Brand Section -->
+            <div class="footer-brand">
+                <div class="footer-logo">VORTIXIA</div>
+                <p class="footer-description">Creating innovative digital solutions for tomorrow's challenges.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="GitHub" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="X (Twitter)" title="X (Twitter)">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Navigation Grid -->
+            <div class="footer-nav-grid">
+                <!-- Company Links -->
+                <div class="footer-nav">
+                    <h3 class="footer-nav-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-building"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-cogs"></i> Services</a></li>
+                        <li><a href="#"><i class="fas fa-laptop-code"></i> Projects</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Services Links -->
+                <div class="footer-nav">
+                    <h3 class="footer-nav-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-code"></i> Software Development</a></li>
+                        <li><a href="#"><i class="fas fa-chart-bar"></i> Data Analysis</a></li>
+                        <li><a href="#"><i class="fas fa-palette"></i> Graphic Design</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Cybersecurity</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Careers Links -->
+                <div class="footer-nav">
+                    <h3 class="footer-nav-title">Careers</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-users"></i> Our Team</a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i> Open Positions</a></li>
+                        <li><a href="#"><i class="fas fa-file-upload"></i> Submit Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 Vortixia. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="performance-optimizer.js"></script>
+</body>
+</html>
